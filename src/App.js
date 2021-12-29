@@ -3,7 +3,6 @@ import './assets/css/main.css';
 function App() {
   return (
     <div>
-            <title>Currency Exchange</title>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             {/* Header */}
@@ -15,9 +14,9 @@ function App() {
             <nav id="menu">
               <ul className="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Directions</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Forum</a></li>
+                <li><a href="#">Login</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
             </nav>
@@ -28,7 +27,7 @@ function App() {
                 <div className="inner">
                   <header>
                     <p>Free Currency Exchange!</p>
-                    <h2>4X Broker</h2>
+                    <h2 className="main-head">4X Broker</h2>
                   </header>
                 </div>
               </article>
@@ -37,7 +36,7 @@ function App() {
                 <div className="inner">
                   <header>
                     <p>Use This Service for Free!</p>
-                    <h2>Matching Exchange Rates</h2>
+                    <h2 className="main-head">Matching Exchange Rates</h2>
                   </header>
                 </div>
               </article>
@@ -46,7 +45,7 @@ function App() {
                 <div className="inner">
                   <header>
                     <p>{/* Once the Pandemic is Over!*/} Forget about the Exchange Rates!</p>
-                    <h2>Travel!</h2>
+                    <h2 className="main-head">Travel!</h2>
                   </header>
                 </div>
               </article>
@@ -55,7 +54,7 @@ function App() {
                 <div className="inner">
                   <header>
                     <p>Become a Forex Trader</p>
-                    <h2>Gain!</h2>
+                    <h2 className="main-head">Gain!</h2>
                   </header>
                 </div>
               </article>
@@ -73,7 +72,7 @@ function App() {
             <section id="one" className="wrapper style2">
               <div className="inner">
                 <div className="grid-style">
-                  <div>
+                  <div className="reactive-adjustment">
                     <div className="box">
                       <div className="image fit">
                         <img src="images/forum.jpg" alt="" />
@@ -90,7 +89,7 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="reactive-adjustment">
                     <div className="box">
                       <div className="image fit">
                         <img src="images/directions.jpg" alt="" />
@@ -121,28 +120,28 @@ function App() {
             </section>
             {/* Three */}
             <section id="three" className="wrapper style2">
-              <div className="inner">
+              <div className="inner testimonials">
                 <header className="align-center">
                   <p className="special">Our Users Have Never Been Happier!</p>
                   <h2>User Reviews!</h2>
                 </header>
                 <div className="gallery">
-                  <div>
+                  <div className="cover-img">
                     <div className="image fit">
                       <a href="#"><img src="images/pic01.jpg" alt="" /></a>
                     </div>
                   </div>
-                  <div>
+                  <div className="cover-img">
                     <div className="image fit">
                       <a href="#"><img src="images/pic02.jpg" alt="" /></a>
                     </div>
                   </div>
-                  <div>
+                  <div className="cover-img">
                     <div className="image fit">
                       <a href="#"><img src="images/pic03.jpg" alt="" /></a>
                     </div>
                   </div>
-                  <div>
+                  <div className="cover-img">
                     <div className="image fit">
                       <a href="#"><img src="images/pic04.jpg" alt="" /></a>
                     </div>
