@@ -35,6 +35,11 @@ var settings = {
 		xsmall:	'(max-width: 480px)'
 	});
 
+
+	function sayHello() {
+		alert("hello")
+	}
+
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
