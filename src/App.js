@@ -1,3 +1,7 @@
+import React from 'react';
+
+import Chat from './components/Chat';
+
 import './assets/css/main.css';
 
 function App() {
@@ -138,6 +142,8 @@ function App() {
                   Vel quam elementum pulvinar etiam non quam. Tincidunt eget nullam non nisi est. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Sed felis eget velit aliquet sagittis id consectetur purus. Ac ut consequat semper viverra nam libero justo laoreet. Commodo ullamcorper a lacus vestibulum sed arcu. Donec adipiscing tristique risus nec feugiat in. Sem et tortor consequat id porta nibh. Suspendisse ultrices gravida dictum fusce ut. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Diam phasellus vestibulum lorem sed risus. Molestie nunc non blandit massa enim nec dui nunc mattis. A diam sollicitudin tempor id eu nisl nunc. Ornare massa eget egestas purus. Ultrices sagittis orci a scelerisque. Diam sollicitudin tempor id eu nisl nunc mi. Est ante in nibh mauris cursus mattis molestie a iaculis. In iaculis nunc sed augue lacus.</p>
               </div>
             </section>
+
+            <Chat></Chat>
 
             {/* Four */}
             <section id="three" className="wrapper style2">
