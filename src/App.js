@@ -19,7 +19,6 @@ function App() {
               <ul className="links">
                 <li><a href="#instructions">Instructions</a></li>
                 <li><a href="#forum">Forum</a></li>
-                <li><a href="#">Login</a></li>
                 <li><a href="#userReviews">Reviews</a></li>
                 <li><a href="#footer">Contact us</a></li>
               </ul>
