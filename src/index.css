@@ -36,7 +36,7 @@ code {
   }
 }
 
-.hi {
+.max-height-chat {
   height: 60%;
   overflow-y: scroll;
 }
@@ -77,4 +77,36 @@ code {
 ::marker {
   visibility: hidden;
   color: black;
+}
+
+.sumbit-chat {
+  padding: 0;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+.outline-none:focus {
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.form-control:focus {
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 480px) {
+  .text{
+    width: 450px;
+  }
+}
+
+.right-corner {
+  margin-left: 95%
 }

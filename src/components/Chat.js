@@ -9,9 +9,6 @@ import { useAuthState } from '../hooks';
 // Components
 import Channel from '../components/Channel';
 import Loader from '../components/Loader';
-// Import Font Awesome Ions
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import fa-comments-dollar from '@fortawesome/free-solid-svg-icons'
 
 
 firebase.initializeApp({
@@ -108,17 +105,17 @@ function Chat() {
   };
 
   return (
-    <div className="hi">
+    <div className="max-height-chat">
       <div className="flex flex-col h-full bg-coolDark-500 text-white transition-colors">
         <header
           className="flex-shrink-0 flex items-center justify-between px-4 sm:px-8 shadow-md navbar-chat"
           style={{ height: 'var(--topbar-height)' }}
         >
-          <div className="flex items-center">
+          <div className="flex right-corner">
             {user ? (
               <button
                 onClick={signOut}
-                className="uppercase text-sm font-medium text-white tracking-wide bg-transparent rounded py-2 px-4 mr-4 focus:outline-none focus:ring focus:ring-primary-500 focus:ring-opacity-75 transition-all"
+                className="uppercase text-sm font-medium text-white tracking-wide rounded py-2 px-4 mr-4 focus:outline-none  transition-all"
               >
                 Sign out
               </button>

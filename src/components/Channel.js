@@ -20,12 +20,6 @@ const Channel = ({ user = null }) => {
 
   const { uid, displayName, photoURL } = user;
 
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, [inputRef]);
-
   const handleOnChange = e => {
     setNewMessage(e.target.value);
   };
@@ -46,15 +40,15 @@ const Channel = ({ user = null }) => {
       // Clear input field
       setNewMessage('');
       // Scroll down to the bottom of the list
-      bottomListRef.scrollTop = bottomListRef.scrollHeight - bottomListRef.clientHeight;
+      // bottomListRef.scrollTop = bottomListRef.scrollHeight - bottomListRef.clientHeight;
       // var myDiv = document.getElementById("chat-forex");
       // myDiv.scrollTop = myDiv.scrollHeight;
-      // chatforex.current.scrollIntoView({ behavior: 'smooth' });
+      // bottomListRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  function scrollToBottom (id) {
-     var div = document.getElementById(id);
+  function scrollToBottom() {
+     var div = document.getElementById("chat-forex-messages");
      div.scrollTop = div.scrollHeight - div.clientHeight;
   };
 
@@ -72,7 +66,7 @@ const Channel = ({ user = null }) => {
             </p>
           </div>
           <div id="chat-forex-messages">
-          <ul className="chat-forex">
+          <ul ref={bottomListRef} className="chat-forex">
             {messages
               ?.sort((first, second) =>
                 first?.createdAt?.seconds <= second?.createdAt?.seconds ? -1 : 1
@@ -84,13 +78,13 @@ const Channel = ({ user = null }) => {
               ))}
           </ul>
           </div>
-          <div ref={bottomListRef} />
+          <div />
         </div>
       </div>
       <div className="mb-6 mx-4">
         <form
           onSubmit={handleOnSubmit}
-          className="flex flex-row bg-coolDark-400 rounded-md px-4 py-3 z-10 max-w-screen-lg mx-auto text-white shadow-md"
+          className="flex flex-row bg-coolDark-400 rounded-md px-4 py-3 z-10 max-w-screen-lg mx-auto text-white shadow-md sumbit-chat"
         >
           <input
             ref={inputRef}
@@ -101,10 +95,10 @@ const Channel = ({ user = null }) => {
             className="flex-1 bg-transparent outline-none"
           />
           <button
-            onClick="scrollToBottom('chat-forex-messages')"
+            onClick={scrollToBottom}
             type="submit"
             disabled={!newMessage}
-            className="uppercase font-semibold text-sm tracking-wider text-gray-500 hover:text-white transition-colors"
+            className="bg-transparent outline-none uppercase font-semibold text-sm tracking-wider hover:text-white transition-colors"
           >
             Send
           </button>
