@@ -17,10 +17,11 @@ function App() {
             {/* Nav */}
             <nav id="menu">
               <ul className="links">
-                <li><a href="#about">Instructions</a></li>
-                <li><a href="#">Forum</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#forum">Forum</a></li>
                 <li><a href="#">Login</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#userReviews">Reviews</a></li>
+                <li><a href="#footer">Contact us</a></li>
               </ul>
             </nav>
             {/* Banner */}
@@ -88,7 +89,7 @@ function App() {
                         </header>
                         <p> This is where all the desired and expendable currencies are posted. Please remember to add a possible way for people to contact you. Please be as specific as possible. Be sure to mention the currency you wish to trade and how much you will be trading.</p>
                         <footer className="align-center">
-                          <a href="#about" className="button alt">Click Here to Join the Forum!</a>
+                          <a href="#forum" className="button alt">Click Here to Join the Forum!</a>
                         </footer>
                       </div>
                     </div>
@@ -105,7 +106,7 @@ function App() {
                         </header>
                         <p> A quick and simple guide to understand how the currency exchange works! Be sure to look at this article before posting on the forum. It speaks to the directions, rules, regulations, benafits and legality behind this Forex trading process.</p>
                         <footer className="align-center">
-                          <a href="#" className="button alt">Learn More</a>
+                          <a href="#instructions" className="button alt">Learn More</a>
                         </footer>
                       </div>
                     </div>
@@ -125,7 +126,7 @@ function App() {
             </section>
 
             {/* Three */}
-            <section id="about" className="wrapper style2">
+            <section id="instructions" className="wrapper style2">
               <div className="inner">
                 <header className="align-center">
                   <p className="special">How it works!</p>
@@ -143,10 +144,12 @@ function App() {
               </div>
             </section>
 
-            <Chat></Chat>
+            <div id="forum">
+              <Chat></Chat>
+            </div>
 
             {/* Four */}
-            <section id="three" className="wrapper style2">
+            <section id="userReviews" className="wrapper style2">
               <div className="inner testimonials">
                 <header className="align-center">
                   <p className="special">Our Users Have Never Been Happier!</p>
@@ -160,7 +163,7 @@ function App() {
                   </div>
                   <div className="cover-img">
                     <div className="image fit">
-                      <a href="#"><img src="images/pic02.jpg" alt="" /></a>
+                      <a href="#"><img src="images/pic03.jpg" alt="" /></a>
                     </div>
                   </div>
                   <div className="cover-img">

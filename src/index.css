@@ -101,12 +101,65 @@ code {
   box-shadow: none !important;
 }
 
+.right-corner {
+  margin-left: 93%;
+  margin-top: 1.5rem;
+  margin-right: 0;
+}
+
 @media screen and (max-width: 480px) {
-  .text{
-    width: 450px;
+  .sumbit-adjustment {
+    width: 30%;
   }
 }
 
-.right-corner {
-  margin-left: 95%
+@media screen and (max-width: 980px) and (min-width: 665px) {
+  .right-corner {
+    margin-left: 85%;
+    margin-top: 1.5rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 665px) and (min-width: 561px) {
+  .right-corner {
+    margin-left: 80%;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 561px) and (min-width: 390px) {
+  .right-corner {
+    margin-left: 70%;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .right-corner {
+    margin-left: 65%;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+
+  .transition-all {
+    margin-right: 0;
+  }
+}
+
+.name-chat {
+  margin: 0;
+}
+
+.time-chat {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.sumbit-adjustment:hover {
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

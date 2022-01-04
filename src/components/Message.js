@@ -36,10 +36,10 @@ const Message = ({
       <div>
         <div className="flex items-center mb-1">
           {displayName ? (
-            <p className="mr-2 text-primary-500">{displayName}</p>
+            <p className="mr-2 text-primary-500 name-chat">{displayName}</p>
           ) : null}
           {createdAt?.seconds ? (
-            <span className="text-gray-500 text-xs">
+            <span className="text-gray-500 text-xs time-chat">
               {formatDate(new Date(createdAt.seconds * 1000))}
             </span>
           ) : null}

@@ -47,11 +47,6 @@ const Channel = ({ user = null }) => {
     }
   };
 
-  function scrollToBottom() {
-     var div = document.getElementById("chat-forex-messages");
-     div.scrollTop = div.scrollHeight - div.clientHeight;
-  };
-
   return (
     <div className="flex flex-col h-full">
       <div className="overflow-auto h-full">
@@ -95,10 +90,9 @@ const Channel = ({ user = null }) => {
             className="flex-1 bg-transparent outline-none"
           />
           <button
-            onClick={scrollToBottom}
             type="submit"
             disabled={!newMessage}
-            className="bg-transparent outline-none uppercase font-semibold text-sm tracking-wider hover:text-white transition-colors"
+            className="bg-transparent outline-none uppercase font-semibold text-sm tracking-wider transition-colors sumbit-adjustment"
           >
             Send
           </button>
